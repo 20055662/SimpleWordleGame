@@ -1,7 +1,4 @@
 # src/game.py
-from utils import load_words
-import random
-
 def score_guess(the_target, the_guess):
     position = 0
     symbol = ""
