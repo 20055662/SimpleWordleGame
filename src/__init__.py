@@ -1,5 +1,5 @@
-from utils import load_words
-from game import score_guess
+from src.utils import load_words
+from src.game import score_guess
 import random
 
 

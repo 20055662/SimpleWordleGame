@@ -1,8 +1,8 @@
-import unittest
+import pytest
+from src.game import score_guess
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+def test_score_guess_correct():
+    assert score_guess("apple", "apple") == True
 
-if __name__ == '__main__':
-    unittest.main()
+def test_score_guess_incorrect():
+    assert score_guess("apple", "ample") == False
